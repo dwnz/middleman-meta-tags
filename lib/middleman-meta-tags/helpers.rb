@@ -102,6 +102,8 @@ module Middleman
       end
 
       def auto_set_meta_tags
+        print site_data
+
         geocoding_data = site_data['geocoding'] || {}
         author_data    = site_data['author'] || {}
 
