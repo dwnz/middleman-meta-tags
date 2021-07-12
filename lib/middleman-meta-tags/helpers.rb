@@ -2,11 +2,11 @@ module Middleman
   module MetaTags
     module Helpers
       def meta_tags
-        @meta_tags ||= ActiveSupport::HashWithIndifferentAccess.new
+        @meta_tags ||= ActiveSupport::Hashie::Extensions::IndifferentAccess.new
       end
 
       def link_tags
-        @link_tags ||= ActiveSupport::HashWithIndifferentAccess.new
+        @link_tags ||= ActiveSupport::Hashie::Extensions::IndifferentAccess.new
       end
 
       def set_meta_tags(meta_tags = {})
